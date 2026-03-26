@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBrain, FaChalkboardTeacher, FaRocket, FaUsers } from "react-icons/fa";
+import { FaChalkboardTeacher, FaRocket, FaUsers } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
 
 const robotGallery = [
@@ -19,12 +19,12 @@ const impactStats = [
 const values = [
   {
     title: "Robot-First Design",
-    text: "Every solution is centered on practical humanoid robot usage for classroom, campus, and operational environments.",
+    text: "Every solution is centered on practical humanoid robot usage for classroom, campus and operational environments.",
     icon: FaChalkboardTeacher,
   },
   {
     title: "Role-Specific Robots",
-    text: "Our lineup includes dedicated robots for assistance, teaching, reception, and workflow automation with clear use-cases.",
+    text: "Our lineup includes dedicated robots for assistance, teaching, reception and workflow automation with clear use-cases.",
     icon: FaRocket,
   },
   {
@@ -46,21 +46,11 @@ const AboutUs = () => {
       >
         <div className="relative max-w-6xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
-            <p
-              className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold shadow-sm ${
-                isDark
-                  ? "border border-white/20 bg-[#EC7B21]/15 text-[#EC7B21]"
-                  : "border border-black/10 bg-[#EC7B21]/10 text-[#EC7B21]"
-              }`}
-            >
-              <FaBrain size={11} />
-              About WHIZROBO
-            </p>
             <h1 className={`mt-4 text-4xl md:text-6xl font-extrabold tracking-tight ${isDark ? "text-white" : "text-black"}`}>
               Built Around Robots. Designed for Real-World Impact.
             </h1>
             <p className={`mt-4 text-base md:text-lg leading-relaxed ${isDark ? "text-white/70" : "text-black/70"}`}>
-              WHIZROBO is focused on humanoid robots that support education, communication, reception, and automation through practical deployment.
+              WHIZROBO is focused on humanoid robots that support education, communication, reception and automation through practical deployment.
             </p>
           </div>
 
@@ -71,7 +61,7 @@ const AboutUs = () => {
                   Why organizations choose our robots
                 </h2>
                 <p className={`mt-3 leading-relaxed ${isDark ? "text-white/70" : "text-black/70"}`}>
-                  We build and deliver humanoid robot solutions that are easy to deploy, simple to operate, and tailored for real educational and institutional needs.
+                  We build and deliver humanoid robot solutions that are easy to deploy, simple to operate and tailored for real educational and institutional needs.
                 </p>
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                   {[

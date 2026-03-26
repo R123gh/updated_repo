@@ -63,7 +63,7 @@ const Home = () => {
                 Robots Solving Practical, Daily Problems
               </h2>
               <p className="mt-3 text-black/70 text-base sm:text-lg">
-                WHIZROBO robots are deployed in real environments where they reduce workload, guide people, and deliver consistent support.
+                WHIZROBO robots are deployed in real environments where they reduce workload, guide people and deliver consistent support.
               </p>
             </div>
 
@@ -80,7 +80,7 @@ const Home = () => {
                 </div>
                 <h3 className="mt-4 text-xl font-extrabold text-black">Healthcare & Hospitals</h3>
                 <p className="mt-3 text-black/70 leading-relaxed">
-                  Robots handle patient guidance, appointment flow, queue updates, and visitor assistance to improve service speed and clarity.
+                  Robots handle patient guidance, appointment flow, queue updates and visitor assistance to improve service speed and clarity.
                 </p>
               </article>
 
@@ -96,7 +96,7 @@ const Home = () => {
                 </div>
                 <h3 className="mt-4 text-xl font-extrabold text-black">Education & Smart Learning</h3>
                 <p className="mt-3 text-black/70 leading-relaxed">
-                  Robots support interactive lessons, quick Q&A, and structured learning routines for classrooms and campus programs.
+                  Robots support interactive lessons, quick Q&A and structured learning routines for classrooms and campus programs.
                 </p>
               </article>
 
@@ -112,7 +112,7 @@ const Home = () => {
                 </div>
                 <h3 className="mt-4 text-xl font-extrabold text-black">Corporate Offices & Reception Automation</h3>
                 <p className="mt-3 text-black/70 leading-relaxed">
-                  Robots welcome guests, handle visitor check-ins, provide directions, and keep front desks running smoothly.
+                  Robots welcome guests, handle visitor check-ins, provide directions and keep front desks running smoothly.
                 </p>
               </article>
             </div>

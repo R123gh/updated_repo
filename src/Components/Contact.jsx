@@ -96,9 +96,6 @@ const Contact = () => {
       >
         <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-10">
-            <p className="inline-flex items-center rounded-full border border-black/10 bg-[#EC7B21]/10 px-3 py-1 text-xs font-semibold text-[#EC7B21]">
-              Contact WHIZROBO
-            </p>
             <h1 className="mt-4 text-4xl md:text-5xl font-extrabold text-black tracking-tight">
               Let&apos;s plan your robotics and AI journey
             </h1>
@@ -109,25 +106,25 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
             <div className="rounded-3xl border border-black/10 shadow-[0_18px_55px_rgba(0,0,0,0.08)]">
-              <div className="h-full rounded-3xl bg-white p-6 sm:p-8">
+              <div className="h-full rounded-3xl bg-white p-6 sm:p-8 text-center flex flex-col items-center justify-center">
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-black">Get in touch</h2>
-                <div className="mt-6 space-y-4 text-black/70">
-                  <div className="flex items-start gap-3">
+                <div className="mt-6 w-full space-y-4 text-black/70">
+                  <div className="flex items-center justify-center gap-3">
                     <FaPhoneAlt className="text-[#EC7B21] mt-1" />
                     <span className="font-medium">+91-896-871-4000, +91-946-421-4000</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-center justify-center gap-3">
                     <FaEnvelope className="text-[#EC7B21] mt-1" />
                     <span className="font-medium">
                       <a href="mailto:info@whizrobo.com" className="hover:text-[#EC7B21] transition">info@whizrobo.com</a> |{" "}
                       <a href="mailto:support@whizrobo.com" className="hover:text-[#EC7B21] transition">support@whizrobo.com</a>
                     </span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-center justify-center gap-3">
                     <FaMapMarkerAlt className="text-[#EC7B21] mt-1" />
                     <span className="font-medium">WHIZROBO PRIVATE LIMITED, INDIA</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-center justify-center gap-3">
                     <FaFileAlt className="text-[#EC7B21] mt-1" />
                     <span className="font-medium">
                       <Link to="/privacy-policy" className="hover:text-[#EC7B21] transition">Privacy Policy</Link> |{" "}
@@ -136,9 +133,9 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="mt-8">
+                <div className="mt-8 w-full">
                   <h3 className="text-sm font-bold text-black tracking-wide">Follow us</h3>
-                  <div className="mt-3 flex items-center gap-3">
+                  <div className="mt-3 flex items-center justify-center gap-3">
                     {socialLinks.map((item) => {
                       const Icon = item.icon;
                       return (

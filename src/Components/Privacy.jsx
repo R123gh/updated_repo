@@ -42,7 +42,7 @@ const Privacy = () => {
 
         <h2 className="text-2xl font-bold text-black mt-8">3. Purpose and Use of Information</h2>
         <p>
-          Information collected is used to provide updates about products and services, improve the Website, conduct research and surveys, ensure data security, manage user accounts, communicate important updates, send verification messages, and other purposes deemed necessary by WHIZROBO.
+          Information collected is used to provide updates about products and services, improve the Website, conduct research and surveys, ensure data security, manage user accounts, communicate important updates, send verification messages and other purposes deemed necessary by WHIZROBO.
         </p>
 
         <h2 className="text-2xl font-bold text-black mt-8">4. Sharing of Information</h2>

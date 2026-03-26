@@ -93,10 +93,10 @@ const Login = ({ onLogin }) => {
               <FaRobot size={22} />
             </div>
             <h2 className="mt-5 text-3xl sm:text-4xl font-extrabold leading-tight">
-              Learn, Build, and Scale with AI + Robotics
+              Learn, Build and Scale with AI + Robotics
             </h2>
             <p className="mt-4 text-sm sm:text-base text-white/80 leading-relaxed">
-              Access kits, robots, and learning workflows from one account. Use login for existing users or create a new account to get started.
+              Access kits, robots and learning workflows from one account. Use login for existing users or create a new account to get started.
             </p>
             <div className="mt-6 space-y-3 text-sm">
               <div className="flex items-center gap-2">

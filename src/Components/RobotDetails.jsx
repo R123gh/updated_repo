@@ -22,7 +22,7 @@ const robotsData = [
     description: "AI Assistant",
     bullets: [
       "Supports students and staff with personalized assistance.",
-      "Helps manage schedules, reminders, and basic queries.",
+      "Helps manage schedules, reminders and basic queries.",
       "Facilitates interactive learning and collaborative projects.",
     ],
     footer:

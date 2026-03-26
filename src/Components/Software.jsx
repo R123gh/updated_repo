@@ -5,7 +5,7 @@ const softwareData = [
     id: "1",
     name: "WhizBot App",
     image: "/software-whizbot.png",
-    description: "Control your WhizBot, configure routines, and monitor activities in real-time.",
+    description: "Control your WhizBot, configure routines and monitor activities in real-time.",
     link: "#",
   },
   {
@@ -41,7 +41,7 @@ const Software = () => {
           Our Software Tools
         </h1>
         <p className="mt-3 text-black/70 max-w-2xl mx-auto">
-          Explore our software solutions for robotics, AI, and STEM learning.
+          Explore our software solutions for robotics, AI and STEM learning.
         </p>
       </div>
 

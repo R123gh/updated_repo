@@ -283,7 +283,7 @@ const GeneralFaqChatbot = () => {
     {
       role: "assistant",
       content:
-        "Hello, I am the WHIZROBO Support Assistant. Ask any question about our programs, grades, training, pricing, and partnerships.",
+        "Hello, I am the WHIZROBO Support Assistant. Ask any question about our programs, grades, training, pricing and partnerships.",
     },
   ]);
 

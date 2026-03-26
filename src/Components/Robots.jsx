@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { FaCompress, FaExpand, FaMicrophone, FaPlay, FaRobot, FaStop } from "react-icons/fa";
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || "";
@@ -30,7 +31,7 @@ const robotsData = [
     description: "AI Assistant",
     bullets: [
       "Supports students and staff with personalized assistance.",
-      "Helps manage schedules, reminders, and basic queries.",
+      "Helps manage schedules, reminders and basic queries.",
       "Facilitates interactive learning and collaborative projects.",
     ],
     footer:
@@ -41,7 +42,7 @@ const robotsData = [
     name: "WhizGreeter",
     image: "/IMG_3991.png",
     shortDesc:
-      "Welcomes visitors with AI-powered interaction, face recognition, and scheduling assistance.",
+      "Welcomes visitors with AI-powered interaction, face recognition and scheduling assistance.",
     manualFile: "whizgreeter-user-manual.pdf",
     description: "AI Receptionist",
     bullets: [
@@ -57,7 +58,7 @@ const robotsData = [
     name: "WhizAaru",
     image: "/IMG_3994.png",
     shortDesc:
-      "AI Teacher delivering personalized lessons, quizzes, and real-time learning support.",
+      "AI Teacher delivering personalized lessons, quizzes and real-time learning support.",
     manualFile: "whizaaru-user-manual.pdf",
     description: "AI Teacher",
     bullets: [
@@ -86,8 +87,8 @@ const getSmartReply = (query, contextLabel) => {
     ((/\b(hi|hii|hello|hey)\b/.test(normalized) && normalized.split(" ").length <= 4));
   if (isGreeting) {
     return (
-      `Hello! Whizrobo is the organization, and under it we have four robots: ` +
-      `WhizBot, WhizBuddy, WhizAaru, and WhizGreeter (WhizGreet). ` +
+      `Hello! Whizrobo is the organization and under it we have four robots: ` +
+      `WhizBot, WhizBuddy, WhizAaru and WhizGreeter (WhizGreet). ` +
       `I can help you with ${contextLabel}. Ask about features, use-cases, deployment flow, integration, or which robot best fits your requirement.`
     );
   }
@@ -101,11 +102,11 @@ const getSmartReply = (query, contextLabel) => {
   }
 
   if (/\b(help|support|assist me)\b/.test(normalized)) {
-    return `Certainly. I can support with ${contextLabel}, implementation strategy, and expected outcomes for education or operations.`;
+    return `Certainly. I can support with ${contextLabel}, implementation strategy and expected outcomes for education or operations.`;
   }
 
   if (/\b(who are you|what can you do|capabilities)\b/.test(normalized)) {
-    return "I am your WHIZROBO robot assistant. I provide professional and informative guidance for robot selection, usage, and planning.";
+    return "I am your WHIZROBO robot assistant. I provide professional and informative guidance for robot selection, usage and planning.";
   }
 
   return null;
@@ -120,7 +121,7 @@ const makeProfessionalAnswer = (rawAnswer, contextLabel) => {
     .trim();
 
   if (!cleaned) {
-    return `I can help with ${contextLabel}. Please share your specific goal, and I will provide a structured recommendation.`;
+    return `I can help with ${contextLabel}. Please share your specific goal and I will provide a structured recommendation.`;
   }
 
   if (cleaned.length < 80) {
@@ -159,7 +160,7 @@ const Robots = () => {
     {
       role: "assistant",
       content:
-        "Whizrobo is the organization. Under it, we have four robots: WhizBot, WhizBuddy, WhizAaru, and WhizGreeter (WhizGreet). Ask me anything about their features and use-cases.",
+        "Whizrobo is the organization. Under it, we have four robots: WhizBot, WhizBuddy, WhizAaru and WhizGreeter (WhizGreet). Ask me anything about their features and use-cases.",
     },
   ]);
   const messagesEndRef = useRef(null);
@@ -320,7 +321,7 @@ const Robots = () => {
     setRagMessages(nextMessages);
     setRagInput("");
 
-    const contextLabel = "our humanoid robots, their features, and practical use-cases";
+    const contextLabel = "our humanoid robots, their features and practical use-cases";
     const quickReply = getSmartReply(query, contextLabel);
     if (quickReply) {
       setRagMessages((prev) => [...prev, { role: "assistant", content: quickReply }]);
@@ -353,7 +354,7 @@ const Robots = () => {
           role: "assistant",
           content:
             `I could not complete this request right now. ${error.message}. ` +
-            "Please try again, and I will provide a clear, professional response.",
+            "Please try again and I will provide a clear, professional response.",
         },
       ]);
     } finally {
@@ -385,16 +386,12 @@ const Robots = () => {
       <section className="relative overflow-hidden min-h-screen bg-white px-4 sm:px-6 pt-20 pb-16">
 
         <div className="relative text-center mb-14 md:mb-16 max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#EC7B21]/10 px-3 py-1 text-xs font-semibold text-[#EC7B21] shadow-sm">
-            <span className="inline-block h-2 w-2 rounded-full bg-[#EC7B21]" aria-hidden="true" />
-            Robotics lineup
-          </div>
           <h1 className="mt-4 text-4xl md:text-5xl font-extrabold text-black tracking-tight">
             Meet Our Humanoid Robots
           </h1>
           <p className="mt-4 text-black/70 text-base md:text-lg leading-relaxed">
             Explore our advanced robotics solutions designed to inspire learning,
-            innovation, and smarter automation.
+            innovation and smarter automation.
           </p>
         </div>
 
@@ -409,8 +406,7 @@ const Robots = () => {
                   index % 2 !== 0 ? "md:flex-row-reverse" : ""
                 }`}
               >
-                <div className="md:w-1/2 h-72 md:h-[26rem] flex items-center justify-center overflow-hidden relative p-5 md:p-8">
-                  <div aria-hidden="true" className="absolute inset-0 bg-black/5" />
+                <div className="md:w-1/2 h-80 md:h-[30rem] flex items-center justify-center overflow-hidden relative p-2 md:p-4">
                   <img
                     src={robot.image}
                     alt={robot.name}
@@ -431,10 +427,6 @@ const Robots = () => {
                     {robot.shortDesc}
                   </p>
 
-                  <p className="mt-5 text-xs font-semibold uppercase tracking-wide text-black/50">
-                    More
-                  </p>
-
                   <ul className="space-y-3.5 mb-5">
                     {robot.bullets.map((bullet, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-black/70">
@@ -451,13 +443,19 @@ const Robots = () => {
                     {robot.footer}
                   </p>
 
-                  <div className="mt-6">
+                  <div className="mt-6 flex flex-wrap items-center justify-center md:justify-start gap-3">
                     <a
                       href={getManualUrl(robot.manualFile)}
                       className="inline-flex items-center rounded-xl bg-[#EC7B21] text-white px-5 py-2.5 text-sm font-semibold shadow-sm transition hover:opacity-90"
                     >
-                      User Manual
+                      Robot Manual
                     </a>
+                    <Link
+                      to="/demo"
+                      className="inline-flex items-center rounded-xl border border-[#EC7B21]/60 text-[#EC7B21] px-5 py-2.5 text-sm font-semibold transition hover:bg-[#EC7B21]/10"
+                    >
+                      Demo
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -486,7 +484,7 @@ const Robots = () => {
                     <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white" />
                   </span>
                 </h3>
-                <p className="relative text-xs opacity-95">Ask about features, setup, and use-cases.</p>
+                <p className="relative text-xs opacity-95">Ask about features, setup and use-cases.</p>
               </div>
               <div className="relative flex items-center gap-1.5 sm:gap-2">
                 <button

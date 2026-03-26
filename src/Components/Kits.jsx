@@ -86,11 +86,11 @@ const getSmartReply = (query, contextLabel) => {
   }
 
   if (/\b(help|support|assist me)\b/.test(normalized)) {
-    return `Sure. I can help with ${contextLabel}, grade suitability, learning outcomes, estimated implementation approach, and deployment planning.`;
+    return `Sure. I can help with ${contextLabel}, grade suitability, learning outcomes, estimated implementation approach and deployment planning.`;
   }
 
   if (/\b(who are you|what can you do|capabilities)\b/.test(normalized)) {
-    return "I am your WHIZROBO virtual assistant. I provide professional, structured guidance for kit selection, classroom usage, setup, and expected outcomes.";
+    return "I am your WHIZROBO virtual assistant. I provide professional, structured guidance for kit selection, classroom usage, setup and expected outcomes.";
   }
 
   return null;
@@ -104,11 +104,11 @@ const makeProfessionalAnswer = (rawAnswer, contextLabel) => {
     .replace(/\n{3,}/g, "\n\n")
     .trim();
   if (!cleaned) {
-    return `I can help with ${contextLabel}. Please share your exact requirement, and I will provide a clear, step-by-step recommendation.`;
+    return `I can help with ${contextLabel}. Please share your exact requirement and I will provide a clear, step-by-step recommendation.`;
   }
 
   if (cleaned.length < 80) {
-    return `${cleaned}\n\nIf you share your target grade, objective, and timeline, I can provide a more detailed recommendation.`;
+    return `${cleaned}\n\nIf you share your target grade, objective and timeline, I can provide a more detailed recommendation.`;
   }
 
   return cleaned;
@@ -238,7 +238,7 @@ const Kits = () => {
           role: "assistant",
           content:
             `I could not complete this request right now. ${error.message}. ` +
-            "Please try again, and I can provide a complete, structured answer.",
+            "Please try again and I can provide a complete, structured answer.",
         },
       ]);
     } finally {

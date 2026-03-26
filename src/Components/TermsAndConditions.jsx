@@ -23,7 +23,7 @@ const TermsAndConditions = () => {
 
           <h2 className="text-2xl font-bold text-black mt-6">Usage</h2>
           <p>
-            This section is for users who are using the WHIZROBO Products for their Projects/Innovations. We ship Products after rigorous Quality checks, and they are safe for the target age group. Users must ensure products are used as specified. Third-party batteries or chargers are used at the user’s risk. Firmware updates should follow instructions. Support may not be available after one year of purchase.
+            This section is for users who are using the WHIZROBO Products for their Projects/Innovations. We ship Products after rigorous Quality checks and they are safe for the target age group. Users must ensure products are used as specified. Third-party batteries or chargers are used at the user’s risk. Firmware updates should follow instructions. Support may not be available after one year of purchase.
           </p>
 
           <h2 className="text-2xl font-bold text-black mt-6">Acceptable Website Use</h2>
@@ -47,7 +47,7 @@ const TermsAndConditions = () => {
 
           <h2 className="text-2xl font-bold text-black mt-6">Indemnity</h2>
           <p>
-            The User agrees to indemnify and hold harmless the Company, its officers, directors, employees, and agents from claims, actions, demands, liabilities, or losses arising from their use of this website or breach of terms.
+            The User agrees to indemnify and hold harmless the Company, its officers, directors, employees and agents from claims, actions, demands, liabilities, or losses arising from their use of this website or breach of terms.
           </p>
 
           <h2 className="text-2xl font-bold text-black mt-6">Liability</h2>

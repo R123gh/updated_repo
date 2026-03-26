@@ -61,7 +61,7 @@ const Demo = () => {
               </h3>
 
               <p className="text-black/70 flex-grow">
-                Experience the robot performing tasks, interacting with users, and showcasing its features.
+                Experience the robot performing tasks, interacting with users and showcasing its features.
               </p>
             </div>
           </div>
